@@ -17,23 +17,23 @@ dept_name VARCHAR(50)
 
 DepartmentsEmployess
 -
-emp_no int FK >- Employees.emp_no
+emp_no int FK - Employees.emp_no
 dept_no VARCHAR(5) FK >- Departments.dept_no
 
 
 DepartmentsManager
 -
 dept_no VARCHAR(5) FK >- Departments.dept_no
-emp_no int FK >- Employees.emp_no
+emp_no int FK - Employees.emp_no
 
 
 Salaries
 -
-emp_no int FK >- Employees.emp_no
+emp_no int FK - Employees.emp_no
 salary int
 
 
 Titles
 -
-title_id VARCHAR(5) FK >- Employees.emp_title_id
+title_id VARCHAR(5) FK -< Employees.emp_title_id
 title VARCHAR(30)
