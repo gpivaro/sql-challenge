@@ -62,4 +62,53 @@ LIMIT (5);
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 -- 4. List the department of each employee with the following information: 
-employee number, last name, first name, and department name.
+-- employee number, last name, first name, and department name.
+SELECT employees.emp_no, employees.last_name, employees.first_name, departments.dept_name
+FROM employees
+JOIN departments_employees 
+ON employees.emp_no = departments_employees.emp_no
+JOIN departments 
+ON departments_employees.dept_no = departments.dept_no
+LIMIT (5);
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+-- 5. List first name, last name, and sex for employees whose 
+-- first name is "Hercules" and last names begin with "B."
+SELECT employees.first_name, employees.last_name, employees.sex
+FROM employees
+WHERE first_name = 'Hercules' AND last_name LIKE 'B%'
+LIMIT (5);
+
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+-- 6. List all employees in the Sales department, 
+-- including their employee number, last name, first name, and department name.
+SELECT employees.emp_no, employees.last_name, employees.first_name, departments.dept_name
+FROM employees
+JOIN departments_employees 
+ON employees.emp_no = departments_employees.emp_no
+JOIN departments 
+ON departments_employees.dept_no = departments.dept_no
+WHERE departments.dept_name = 'Sales'
+LIMIT (5);
+
+
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+-- 7. List all employees in the Sales and Development departments, 
+-- including their employee number, last name, first name, and department name.
+SELECT employees.emp_no, employees.last_name, employees.first_name, departments.dept_name
+FROM employees
+JOIN departments_employees 
+ON employees.emp_no = departments_employees.emp_no
+JOIN departments 
+ON departments_employees.dept_no = departments.dept_no
+WHERE departments.dept_name = 'Sales' OR departments.dept_name = 'Development'
+LIMIT (5);
+
+
+
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+-- 8. In descending order, list the frequency count of employee last names,
+-- i.e., how many employees share each last name.
+
