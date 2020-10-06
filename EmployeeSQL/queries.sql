@@ -36,7 +36,8 @@ FROM titles
 LIMIT (5);
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
--- 1. List the following details of each employee: employee number, last name, first name, sex, and salary.
+-- 1. List the following details of each employee: employee number, 
+-- last name, first name, sex, and salary.
 SELECT employees.emp_no AS Employee_Number, employees.last_name, employees.first_name, employees.sex, salaries.salary
 FROM employees
 JOIN salaries ON employees.emp_no = salaries.emp_no
@@ -111,4 +112,9 @@ LIMIT (5);
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
 -- 8. In descending order, list the frequency count of employee last names,
 -- i.e., how many employees share each last name.
+SELECT employees.last_name, Count (*)
+FROM employees
+GROUP BY employees.last_name
+ORDER BY Count (*) DESC;
+
 
