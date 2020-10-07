@@ -18,7 +18,7 @@ We will design the tables to hold data in the CSVs, import the CSVs into a SQL d
 
 #### Data Modeling
 
-Inspect the CSVs and sketch out an ERD of the tables. We use the [Quick Database Diagrams](http://www.quickdatabasediagrams.com).
+Inspect the CSVs and sketch out an ERD of the tables. We use the [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/).
 
 #### Data Engineering
 
@@ -53,9 +53,9 @@ As you examine the data, you are overcome with a creeping suspicion that the dat
 
 1. Import the SQL database into Pandas.
 
-2. Create a histogram to visualize the most common salary ranges for employees.
+2. Create a [histogram](EmployeeSQL/Salary_Distribution.png) to visualize the most common salary ranges for employees.
 
-3. Create a bar chart of average salary by title.
+3. Create a [bar chart](EmployeeSQL/Average_Salary_Title.png) of average salary by title.
 
 ## Epilogue
 
