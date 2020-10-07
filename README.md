@@ -10,7 +10,7 @@ This repository contains the following scenario:
 
 In this repository, the major task is a research project on employees of a corporation from the 1980s and 1990s. All that remain of the database of employees from that period are six CSV files.
 
-We will design the tables to hold data in the CSVs, import the CSVs into a SQL database (PostGres), and answer questions about the data. The two major tasks are:
+We will design the tables to hold data in the CSVs, import the CSVs into a SQL database (Postgres), and answer questions about the data. The two major tasks are:
 
 1. Data Engineering / Data Modeling
 
@@ -31,21 +31,21 @@ Inspect the CSVs and sketch out an ERD of the tables. We use the [Quick Database
 
 #### Data Analysis
 
-1. List the following details of each employee: employee number, last name, first name, sex, and salary.
+1. List the following details of each employee: employee number, last name, first name, sex, and salary. [query_1.png](EmployeeSQL/query_1.png)
 
-2. List first name, last name, and hire date for employees who were hired in 1986.
+2. List first name, last name, and hire date for employees who were hired in 1986. [query_2.png](EmployeeSQL/query_2.png)
 
-3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name.
+3. List the manager of each department with the following information: department number, department name, the manager's employee number, last name, first name. [query_3.png](EmployeeSQL/query_3.png)
 
-4. List the department of each employee with the following information: employee number, last name, first name, and department name.
+4. List the department of each employee with the following information: employee number, last name, first name, and department name. [query_4.png](EmployeeSQL/query_4.png)
 
-5. List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B."
+5. List first name, last name, and sex for employees whose first name is "Hercules" and last names begin with "B." [query_5.png](EmployeeSQL/query_5.png)
 
-6. List all employees in the Sales department, including their employee number, last name, first name, and department name.
+6. List all employees in the Sales department, including their employee number, last name, first name, and department name. [query_6.png](EmployeeSQL/query_6.png)
 
-7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name.
+7. List all employees in the Sales and Development departments, including their employee number, last name, first name, and department name. [query_7.png](EmployeeSQL/query_7.png)
 
-8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.
+8. In descending order, list the frequency count of employee last names, i.e., how many employees share each last name. [query_8.png](EmployeeSQL/query_8.png)
 
 ## Bonus
 
